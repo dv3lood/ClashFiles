@@ -3,13 +3,13 @@
 # 或者运行目录下的config.yml
 #---------------------------------------------------#
 # 混合端口 HTTP和SOCKS5用一个端口
-mixed-port: 7890
+mixed-port: 10807
 
 # HTTP 代理端口
 # port: 7890
 
 # SOCKS5 代理端口
-socks-port: 7891
+# socks-port: 7891
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
 # redir-port: 7892
@@ -84,6 +84,7 @@ dns:
      #- 8.8.8.8 # Google DNS
      #- 1.1.1.1 # Cloudflare DNS
       - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+      - https://doh.pub/dns-query # dnspod DoH DNS
       - https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
       - https://cloudflare-dns.com/dns-query # Cloudflare DoH DNS
       - https://dns.google/dns-query # Google DoH DNS
